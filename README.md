@@ -18,3 +18,5 @@ python calculator.py
 ## License
 
 [Creative Commons Zero v1.0 Universal](LICENSE)
+
+Copyright &copy; 2023 Sayan Bhattacharyya
