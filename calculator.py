@@ -20,13 +20,16 @@ def calculate(operation: str, a: float, b: float):
         case "%":
             return a % b
 
+        case "**":
+            return a ** b
+
         case _:
             return None
 
 
 def main():
     # Pre-define possible operations
-    operations = ("+", "-", "*", "/", "//", "%")
+    operations = ("+", "-", "*", "/", "//", "%", "**")
 
     print("Calculator")
     print("==========")
@@ -36,12 +39,13 @@ def main():
     print("4. Division")
     print("5. Floor Division")
     print("6. Remainder")
+    print("7. Exponent")
 
     # Prompt the user for their choice of operation
-    operation = int(input("\nEnter the operation [1-6]: "))
+    operation = int(input("\nEnter the operation [1-7]: "))
 
     # Check if the operation number entered is valid
-    if operation not in range(1, 7):
+    if operation not in range(1, 8):
         return print("Invalid operation!")
 
     operation = operations[operation - 1]
